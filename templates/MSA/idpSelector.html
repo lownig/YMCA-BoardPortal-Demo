@@ -137,9 +137,14 @@ function defer(method) {
 }
 
 defer(function () {
-    alert("jQuery is now loaded");
+    alert("jQuery is now loaded!!");
+    
+$(document).ready(function() {
     $("#api div > h1").text("");
-    $("#api div > h2").text("");    
+    $("#api div > h2").text("");   
+});
+    
+ 
 
 });      
 
