@@ -123,7 +123,7 @@
         /* endinject */
 
         #api h1{display:none;}
-        .intro {display:none;}
+        /* .intro {display:none;} */
     </style>
 
     <script>
@@ -165,12 +165,11 @@ function _waitForElement(selector, delay = 50, tries = 100) {
   }
         
 defer(function () {
-    alert("jQuery is now loaded!!!!!!!");
 
 const start = (async () => {
   const $el = await _waitForElement(`#api`);
     $("#api div > h1").text("");
-    $("#api div > h2").text("");   
+    //$("#api div > h2").text("");   
 })();
     
  
