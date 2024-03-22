@@ -123,7 +123,8 @@
         /* endinject */
 
         #api h1{display:none;}
-        /* .intro {display:none;} */
+        .intro {min-height:100px; position:relative;}
+        .intro h2{position:absolute; bottom:0}
     </style>
 
     <script>
@@ -169,8 +170,8 @@ defer(function () {
 const start = (async () => {
   const $el = await _waitForElement(`#api`);
     $("#api div > h1").text("");
-    $("#localAccountForm div.intro").hide()
-
+    $("#localAccountForm div.intro").remove();
+    $("#api div.intro h2").text("Or, sign in with");
     //$("#api div > h2").text("");   
 })();
     
