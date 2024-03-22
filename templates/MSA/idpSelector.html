@@ -169,6 +169,8 @@ defer(function () {
 const start = (async () => {
   const $el = await _waitForElement(`#api`);
     $("#api div > h1").text("");
+    $("#localAccountForm div.intro").hide()
+
     //$("#api div > h2").text("");   
 })();
     
